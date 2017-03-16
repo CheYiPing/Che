@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>图片</title>
+</head>
+<style type="text/css">
+ul{
+  list-style:none;
+}
+li{
+  float:left;
+  margin-left:10px;
+}
+
+</style>
+<body>
+<ul>
+<li><a href="images/01304c56adb1906ac7256cb07600fc.jpg@900w_1l_2o_100sh.jpg"><img src="images/01304c56adb1906ac7256cb07600fc.jpg@900w_1l_2o_100sh.jpg" /></a>
+<li><a href="images/41dc448076a1449baf6c33d2b455cb06.jpg"><img src="images/41dc448076a1449baf6c33d2b455cb06.jpg" /></a>
+<li><a href="images/3-16122Q44231-51.jpg"><img src="images/3-16122Q44231-51.jpg"" /></a>
+<li><a href="images/8504481_rafal-olbinski-1_thumb.jpg"><img src="images/8504481_rafal-olbinski-1_thumb.jpg" /></a>
+</ul>
+		 
+</body>
+<script src="js/jquery-3.1.1.js"></script>
+<script>
+$(document).ready(function(){
+  //e 事件对象，可以通过该事件对象获取事件的参数 e.pageX - X轴，距浏览器的左边的距离 e.pageY - y轴，距浏览器的顶端的距离 
+  $("a").mouseover(function(e){
+  //鼠标移上去 向body追加大图元素
+    //大图的路径：当前连接的href属性值为大图的路径
+    var $imgSrc = $(this).attr("href");
+    var $maxImg ="<div id='max'><img src='"+$imgSrc+"'></div>";
+    //在body中添加元素
+    $("body").append($maxImg);
+    //设置层的top和left坐标，并动画显示层
+    $("#max").css("top", e.pageY+20).css("left",e.pageX+10).show('slow'); 
+  }).mouseout(function(){
+  //鼠标移开删除大图所在的层
+    $("#max").remove();
+  }).mousemove(function(e){
+  //鼠标移动时改变大图所在的层的坐标
+    $("#max").css("top", e.pageY+20).css("left",e.pageX+10);
+  });
+});
+ 
+
+</script>
+</html>

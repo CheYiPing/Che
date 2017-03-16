@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!-- Demo styles -->
+    <style>
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 300px;
+        margin: 20px auto;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        width: 250px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    img{
+    width: 100%;
+    height: 100%;}
+    </style>
+</head>
+<body>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/01304c56adb1906ac7256cb07600fc.jpg@900w_1l_2o_100sh.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="images/10911977_203253484196_2.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="images/1263764_002013845527_2.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="images/14.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="images/2082016_155756000_2.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="images/3-16122Q44231-51.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="images/41dc448076a1449baf6c33d2b455cb06.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="images/45s58PICVat.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="images/4800623_121248157829_2.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="images/968ab9d1bbce480b85f108b108714c88.jpg" alt="" /></div>
+        </div>
+        <div class="swiper-scrollbar"></div>
+    </div>
+    <script src="js/swiper.min.js"></script>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        scrollbar: '.swiper-scrollbar',
+        scrollbarHide: true,
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        spaceBetween: 30,
+        grabCursor: true,
+        autoplay:300,
+        spped:300,
+            });
+    </script>
+</body>
+</html>

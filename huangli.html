@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<divnk rel="stylesheet" href="css/jd.css" />
+	<script src="js/jquery-3.1.1.js"></script>
+	</head>
+<body>
+	  <div class="wrap">
+	  	<div class="header">
+	  	<div class="header1">
+	  		<h2>程序员老黄历<a href="#">beta</a></h2>
+	  	</div>
+	  	<div class="header2">
+	  		<div id="time"></div>
+	  	</div>
+	  	</div>
+	  	<div class="main">
+	  		<div class="left">
+	  			<a href="#" class="aone">宜</a>
+	  			<a href="#" class="atwo">不宜</a>
+	  		</div>
+	  		<div class="right">
+	  		 <p class="p1">
+	  		 	<span style="display:block;padding-top:28px;color: black; font-size: 28px;padding-left: 15px;font-weight: bold;">洗澡</span>
+	  		 	<a href="#" style="display:block;padding-left: 15px; font-size: 23px;">你几天没洗澡了？</a><br />
+	  		 	<span style="display:block;padding-top:40px;color: black; font-size: 40px;padding-left: 15px;font-weight: bold;">命名变量"nicai"</span>
+	  		 </p>
+	  		 <p class="p2">
+	  		 	 <span style="display:block;padding-top:28px;color: black; font-size: 28px;padding-left: 15px;font-weight: bold;">提交代码</span><br />
+	  		 	<a href="#" style="display:block;   font-size: 23px;padding-left: 15px;">你遇到得一大堆冲突会让你觉<br />得自己是不是穿越了</a> 
+
+	  		 	 	<span style="display:block;padding-top:28px;color: black; font-size: 28px;padding-left: 15px;">代码复审</span> 
+	  		 	<a href="#" style="display:block;  font-size: 23px;padding-left: 15px;font-weight: bold;">你什么问题都发现不了，白白<br />浪费时间</a> 
+
+	  		 	 	<span style="display:block;padding-top:28px;color: black; font-size: 28px;padding-left: 15px;">上微博</span> 
+	  		 	<a href="#" style="display:block;   font-size: 23px;padding-left: 15px;">今天得微博充满负能量</a> 
+
+	  		 	 	<span style="display:block;padding-top:28px;color: black; font-size: 28px;padding-left: 15px;font-weight: bold;">玩FlappyBird</span> 
+	  		 	<a href="#" style="display:block;  font-size: 23px;padding-left: 15px;">除非你想玩到把手机砸了</a>
+
+	  		 </p>
+	  		</div>
+	  		<div class="xia" style="divne-height: 120px;">
+	  			<p style="font-size: 43px;"><a href="#" style="padding-left: 15px; font-size: 50px; color: black;">座位朝向:</a>&nbsp;&nbsp;面向<b style="color:">西北方</b>写程序，Bug&nbsp;最少。</p>
+	  			<p style="font-size: 43px;"><a href="#"style="padding-left: 15px; font-size: 50px; color: black;">今日宜饮:</a>&nbsp;&nbsp;茶，绿茶</p>
+	  			<p style="font-size: 43px;"><a href="#"style="padding-left: 15px; font-size: 50px; color: black;">女神亲近指数:</a>&nbsp;&nbsp;★★★★★</p>
+	  		</div>
+	  	</div>
+		<div class="footer">
+		<p><a href="#">想求签？</a></p>
+		</div>
+	  </div>
+	</body>
+<script type="text/javascript">
+	function  Time() {
+		var d = new Date(),
+			str = '';
+		str +=  '&nbsp;&nbsp;&nbsp;今天是';
+		str += d.getFdivlYear() + '年';
+		str += d.getMonth() + 1 + '月';
+		str += d.getDate() + '日 ';
+//		str += d.getHours() + '时';
+//		str += d.getMinutes() + '分';
+//		str += d.getSeconds() + '秒';
+		str +=  '&nbsp;&nbsp;&nbsp;&nbsp;星期二';
+		return str;
+	}
+	setInterval(function() {
+		$('#time').html(Time)
+	}, 1000);
+</script>
+
+</html>

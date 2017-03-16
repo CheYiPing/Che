@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="js/jquery-3.1.1.js"></script>
+    <style>
+        *{margin: 0;padding: 0;}
+        td{border: 1px solid black;width: 80px;height: 40px;font-size: 18px;text-align: center;line-height: 40px;}
+        .box{width: 360px;height: 550px;border: 1px solid black;position: relative;margin: 0 auto;}
+        .one{border: 1px solid black;width: 160px;height: 300px;line-height: 40px;position: absolute;left: 0;}
+        .two{border: 1px solid black;width: 160px;height: 500px;line-height: 40px;position: absolute;left: 200px;}
+        .right{width: 50px;height: 30px;position: absolute;bottom: 10px;left: 50px;}
+        .left{width: 50px;height: 30px;position: absolute;bottom: 10px;right: 50px;}
+        .all{position: absolute;bottom: 10px;right: 210px;}
+        .fan{position: absolute;bottom: 10px;right: 170px;}
+        .no{position: absolute;bottom: 10px;right: 120px;}
+         td{
+        	width: 40px;
+       	        	height: 80px;
+       }
+        tr:hover{
+        	opacity: 0.4;
+
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <table class="one">
+        <tr>
+            <td><input type="checkbox"/></td>
+            <td>123123</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"/></td>
+            <td>12311123</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"/></td>
+            <td>12312312312</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"/></td>
+            <td>121231231456</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"/></td>
+            <td>564615611</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"/></td>
+            <td>784532123</td>
+        </tr>
+    </table>
+    <table class="two">
+    </table>
+        <button class="left">左移</button>
+        <button class="all">全选</button>
+        <button class="fan">反选</button>
+	    <button class="right">右移</button>
+        
+</div>
+</body>
+<script>
+                //全选
+    $('.all').click(function(){
+        $('body :checkbox').prop('checked',true);
+        $(".one tr:even").css('backgroundColor','red');
+        $(".one tr:odd").css('backgroundColor','green');
+    });
+        $('.fan').click(function () {
+    	$('.one :checkbox').each(function(){
+    		if(this.checked){
+   				$(this).prop("checked",false);
+     	$(".one tr:even").css('backgroundColor','');
+      $(".one tr:odd").css('backgroundColor','');
+    		}else{
+     			$(this).prop("checked",true);
+    			 $(".one tr:even").css('backgroundColor','red');
+     		 $(".one tr:odd").css('backgroundColor','green');
+    		}	
+    	})
+});
+    //点击自己变色
+  	  $(':checkbox').click(function(){
+        if(this.checked){
+            $(this).parent().parent().css('background',color());
+        }else{
+            $(this).parent().parent().css('background','');
+        }
+    });
+    function color(){
+    	return "#"+Math.floor(Math.random()*Math.pow(16,6)).toString(16)
+    }
+            //右移
+    $('.right').click(function(){
+        $(':checkbox').each(function () {
+            if(this.checked) {
+                $('.two').append($(this).parent().parent());
+            }
+        })
+    });
+//                左移			
+$('.left').click(function(){
+        $(':checkbox').each(function () {
+            if(this.checked){
+                $('.one').append($(this).parent().parent());
+            }
+        })
+    })
+</script>
+</html>

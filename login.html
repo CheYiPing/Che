@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="jquery-3.1.1.js"></script>
+    <title></title>
+    <style>
+        #img1{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 10px;
+            top: 500px;
+        }
+        #inner{
+            width: 500px;
+            height: 500px;
+            display: none;
+            position: absolute;
+            left:150px;
+            top: 60px;
+        }
+        #inner img{
+            width: 500px;
+            height: 500px;
+
+
+        }
+    </style>
+</head>
+<body>
+<img id="img1" src="images/IMG_0493 - 副本 - 副本.JPG" alt="" />
+<div id="inner">
+    <img id="img2" src="images/IMG_0493 - 副本 - 副本.JPG" alt="" />
+</div>
+<script src="js/jquery-3.1.1.js"></script>
+<script>
+    $(function(){
+        $('#img1').hover(function(){//
+            if($('#inner').is(':hidden')){//如果当前隐藏
+                $('#inner').show(1000);//那么就显示div
+            }else{//否则
+                $('#inner').hide(1000);//就隐藏div
+            }
+        })
+    })
+
+
+</script>
+</body>
+</html>

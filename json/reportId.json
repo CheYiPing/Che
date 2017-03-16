@@ -1,0 +1,167 @@
+[
+    {
+        "resultData": [
+            {
+                "reportId": "537b2e86fdfe45c39e7fe875dfedf845",
+                "areaCode": "410000000000",
+                "areaName": "河南省",
+                "reportAreas": [
+                    {
+                        "reportId": "953ac6e58fe74e87bb86a54fb0ec3b6f",
+                        "areaCode": "530600000000",
+                        "areaName": "新乡市",
+                        "reportAreas": [
+                            {
+                                "reportId": "4d5413371bff4e7181fc3007b50f04d0",
+                                "areaCode": "530630000000",
+                                "areaName": "延津县"
+                            },
+                            {
+                                "reportId": "4d5413371bff4e7181fc3007b50f04d0",
+                                "areaCode": "530630000000",
+                                "areaName": "凤泉区"
+                            },
+                            {
+                                "reportId": "4d5413371bff4e7181fc3007b50f04d0",
+                                "areaCode": "530630000000",
+                                "areaName": "新乡县"
+                            }
+                        ]
+                    },
+                    {
+                        "reportId": "953ac6e58fe74e87bb86a54fb0ec3b6f",
+                        "areaCode": "530600000000",
+                        "areaName": "鹤壁市",
+                        "reportAreas": [
+                            {
+                                "reportId": "4d5413371bff4e7181fc3007b50f04d0",
+                                "areaCode": "530630000000",
+                                "areaName": "淇县"
+                            },
+                            {
+                                "reportId": "4d5413371bff4e7181fc3007b50f04d0",
+                                "areaCode": "530630000000",
+                                "areaName": "淇滨区"
+                            },
+                            {
+                                "reportId": "4d5413371bff4e7181fc3007b50f04d0",
+                                "areaCode": "530630000000",
+                                "areaName": "经济技术开发区"
+                            }
+                        ]
+                    },
+                    {
+                        "reportId": "953ac6e58fe74e87bb86a54fb0ec3b6f",
+                        "areaCode": "530600000000",
+                        "areaName": "焦作市",
+                        "reportAreas": [
+                            {
+                                "reportId": "4d5413371bff4e7181fc3007b50f04d0",
+                                "areaCode": "530630000000",
+                                "areaName": "武涉县"
+                            }                
+                        ]
+                    },
+                     {
+                        "reportId": "953ac6e58fe74e87bb86a54fb0ec3b6f",
+                        "areaCode": "530600000000",
+                        "areaName": "洛阳市",
+                        "reportAreas": [
+                            {
+                                "reportId": "4d5413371bff4e7181fc3007b50f04d0",
+                                "areaCode": "530630000000",
+                                "areaName": "汝阳县"
+                            }, 
+                            {
+                                "reportId": "4d5413371bff4e7181fc3007b50f04d0",
+                                "areaCode": "530630000000",
+                                "areaName": "老城区"
+                            }                   
+                        ]
+                    }
+                ]
+            },
+            {
+                "reportId": "537b2e86fdfe45c39e7fe875dfedf845",
+                "areaCode": "410000000000",
+                "areaName": "河南省",
+                "reportAreas": [
+                    {
+                        "reportId": "953ac6e58fe74e87bb86a54fb0ec3b6f",
+                        "areaCode": "530600000000",
+                        "areaName": "新乡市",
+                        "reportAreas": [
+                            {
+                                "reportId": "4d5413371bff4e7181fc3007b50f04d0",
+                                "areaCode": "530630000000",
+                                "areaName": "延津县"
+                            },
+                            {
+                                "reportId": "4d5413371bff4e7181fc3007b50f04d0",
+                                "areaCode": "530630000000",
+                                "areaName": "凤泉区"
+                            },
+                            {
+                                "reportId": "4d5413371bff4e7181fc3007b50f04d0",
+                                "areaCode": "530630000000",
+                                "areaName": "新乡县"
+                            }
+                        ]
+                    },
+                    {
+                        "reportId": "953ac6e58fe74e87bb86a54fb0ec3b6f",
+                        "areaCode": "530600000000",
+                        "areaName": "鹤壁市",
+                        "reportAreas": [
+                            {
+                                "reportId": "4d5413371bff4e7181fc3007b50f04d0",
+                                "areaCode": "530630000000",
+                                "areaName": "淇县"
+                            },
+                            {
+                                "reportId": "4d5413371bff4e7181fc3007b50f04d0",
+                                "areaCode": "530630000000",
+                                "areaName": "淇滨区"
+                            },
+                            {
+                                "reportId": "4d5413371bff4e7181fc3007b50f04d0",
+                                "areaCode": "530630000000",
+                                "areaName": "经济技术开发区"
+                            }
+                        ]
+                    },
+                    {
+                        "reportId": "953ac6e58fe74e87bb86a54fb0ec3b6f",
+                        "areaCode": "530600000000",
+                        "areaName": "焦作市",
+                        "reportAreas": [
+                            {
+                                "reportId": "4d5413371bff4e7181fc3007b50f04d0",
+                                "areaCode": "530630000000",
+                                "areaName": "武涉县"
+                            }                
+                        ]
+                    },
+                     {
+                        "reportId": "953ac6e58fe74e87bb86a54fb0ec3b6f",
+                        "areaCode": "530600000000",
+                        "areaName": "洛阳市",
+                        "reportAreas": [
+                            {
+                                "reportId": "4d5413371bff4e7181fc3007b50f04d0",
+                                "areaCode": "530630000000",
+                                "areaName": "汝阳县"
+                            }, 
+                            {
+                                "reportId": "4d5413371bff4e7181fc3007b50f04d0",
+                                "areaCode": "530630000000",
+                                "areaName": "老城区"
+                            }                   
+                        ]
+                    }
+                ]
+            }
+        ]
+        
+    }   
+]

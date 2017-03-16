@@ -1,0 +1,126 @@
+@import url('reset.css');
+.full {
+    width: 100%;
+    height: 100%;
+}
+.whb(@w, @h, @b) {
+    width: @w;
+    height: @h;
+    background: @b;
+}
+.f(@f:left) {
+    float: @f;
+}
+.p(@p) {
+    position: @p;
+}
+
+.full{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.box(@dir:horizontal){
+   display: -webkit-box;
+  -webkit-box-orient: @dir;
+}
+
+html,body,.wrap{
+    .full;
+}
+ 
+.wrap{
+    .box(vertical);
+    .header{
+        //rem 相当于是12px 1rem 12px
+        .whb(100%,20.4rem,null);
+        -webkit-box-align: center;
+    .header1{
+                .whb(100%,8.4rem,#565656);
+                h2{
+                .whb(40%,8.4rem,null);
+                color:#bfbfbf;
+                padding-top: 1.6rem;
+                padding-left: 2.0rem;
+                font-size:4.4rem ;
+
+                a{
+                    position: absolute;
+                    left: 292px;
+                    top:2px;
+                    color: #BFBFBF;
+                    font-size: 4.2rem;
+                    
+
+                }
+                }
+    }
+     .header2{
+         .whb(100%,13.0rem,null);
+         padding-top: 20px;
+         #time{
+             .whb(100%,8.0rem,null);  
+             font-size: 5.5rem;
+             color: black;
+         }
+     }
+    }
+    .main{
+        -webkit-box-flex: 1;
+     .left{
+         .whb(34%,62%,null);
+         .f;
+         .aone{
+            .whb(100%,300px,#ffee44);
+            display: block;
+            font-size: 100px;
+            color: black;          
+            text-align: center;          
+            line-height: 300px;
+            .f;
+
+         }
+          .atwo{
+            .whb(100%,600px,#ff4443);
+            display: block;   
+            font-size: 100px;
+            color: #fff;
+            text-align: center;  
+            line-height: 600px;
+            .f;
+
+         }
+         
+     }  
+      .right{
+         .whb(66%,62%,null);
+        .f(right);
+           .p1{
+            .whb(100%,300px,#ffffac);
+            
+         }
+          .p2{
+            .whb(100%,600px,#ffded4);
+            color: #fff;
+
+         }
+     }
+    }  
+    .xia{
+         padding-top: 20px;
+        .whb(100%,20rem,null); 
+   
+    }
+    .footer{
+        .whb(100%,16rem,#eeeeee);        
+        -webkit-box-align: center;
+        a{
+            display: block;
+            font-size: 60px;
+            text-align: center;
+            line-height: 18rem;
+
+        }
+}
+}

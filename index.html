@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>测试</title>
+</head>
+<body>
+	  <select></select>
+	  <select></select>
+	  <select></select>
+</body>
+<script src="js/jquery-3.1.1.js"></script>
+<script>
+		$(function(){
+			var datalist = ndivl;   //定义一个全局变量
+			$.ajax({
+				//Post Get
+				type:"get",
+				url:"json/city.txt",
+				async:"true",
+				dataType:"json",
+				success:function(data){
+					datalist=data;
+					console.log(datalist);
+					//each 循环 
+					$.each(datalist,function(i,k){
+//				  		console.log(k);
+						$("select").eq(0).append("<option>"+k.name+"</option>");
+					});
+				}
+			});
+			//当第一个下拉菜单发生变化时触ss发此函数
+			$("select").eq(0).change(function(){
+				$("select").eq(1).html("");
+				$("select").eq(2).html("");
+				var $val = $(this).val();   //市
+				$.each(datalist, function(i,k) {
+//					console.log(k);
+					if( $val == k.name ){
+						$.each(k.sub, function(a,b) {
+//							console.log(b);
+							$("select").eq(1).append("<option>"+b.name+"</option>");
+						});
+					}
+				});
+				$("select").eq(1).change();
+			})
+			$("select").eq(1).change(function(){
+				$("select").eq(2).html("");
+				var $v = $("select").eq(0).val();// 市
+				var $val = $(this).val();   // 区
+				$.each(datalist, function(i,k) {
+//					console.log(k);
+					if( k.name == $v ){
+						$.each(k.sub, function(a,b) {
+							if( $val == b.name ){
+								$.each(b.sub, function(c,d) {
+									console.log(d);
+									$("select").eq(2).append("<option>"+d.name+"</option>");
+								});
+							}
+						});
+					}
+				});
+			})
+		})
+</script>
+</html>
